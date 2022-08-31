@@ -1,0 +1,29 @@
+
+#
+# this is an incomplete example file of the template syntax
+# syntax is loosly inspired by elm
+# more syntax will be added later
+#
+
+# this is a comment
+
+# this is a constant
+name = "Aidan"
+
+# this is a function
+hello name = "Hello, {name}!"
+
+# here is a template, using html builder functions
+nav =
+  ul []
+    li []
+      a ["home"]
+    li []
+      a ["about"]
+
+# here is the main function, who's return value will be turned into the html file
+main =
+  div []
+    nav
+    div []
+      p ["Hello, world!"]
